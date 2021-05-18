@@ -100,7 +100,7 @@ function App() {
 						{bidingEntries.map(([price, size]) => {
 							return (
 								<tr key={`bid-entries-${price}`} className={tw([styles.row, 'even:(bg-gray-200)'])}>
-									<td className={tw([styles.text, styles.cell, 'text-red-400'])}>{price.toLocaleString()}</td>
+									<td className={tw([styles.text, styles.cell, 'text-green-500'])}>{price.toLocaleString()}</td>
 									<td className={tw([styles.text, styles.cell, ''])}>{size.toLocaleString()}</td>
 									<td className={tw([styles.text, styles.cell, ''])}>{(price * size).toLocaleString()}</td>
 								</tr>
